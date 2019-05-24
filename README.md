@@ -90,8 +90,6 @@ Flip a file upside down using recent fcmp dynamic array by Bart Jablonski
       end;
     run;quit;
 
-
-
     filename have "d:/txt/have.txt";
     filename want "d:/txt/want.txt";
 
@@ -101,9 +99,9 @@ Flip a file upside down using recent fcmp dynamic array by Bart Jablonski
 
         %dynArray(lines, type= $ 60)
 
-        infile have dlm='0A0D'x; /* to read whole line */
+        infile have dlm='0A0D'x end=eof;
 
-        do i = 1 to 5;
+        do until(EOF);
            input txt $50.;
            %appendBefore(lines, cats(txt, i**3))
         end;

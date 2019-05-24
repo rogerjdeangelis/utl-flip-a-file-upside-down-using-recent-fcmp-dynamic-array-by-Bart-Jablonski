@@ -95,9 +95,9 @@ data _null_;
 
     %dynArray(lines, type= $ 60)
 
-    infile have dlm='0A0D'x; /* to read whole line */
+    infile have dlm='0A0D'x end=eof;
 
-    do i = 1 to 5;
+    do until(EOF);
        input txt $50.;
        %appendBefore(lines, cats(txt, i**3))
     end;
@@ -113,6 +113,7 @@ data _null_;
     end;
 stop;
 run;quit;
+
 
 *_
 | | ___   __ _

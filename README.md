@@ -1,6 +1,6 @@
 # utl-flip-a-file-upside-down-using-recent-fcmp-dynamic-array-by-Bart-Jablonski
 Flip a file upside down using recent fcmp dynamic array by Bart Jablonski
-    Flip a file upside down using recent fcmp dynamic array by Bart Jablonski
+    Flip a file upside down using recent hash dynamic array by Bart Jablonski
 
     This is probably not the best example of some usefull functions.
 
